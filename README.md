@@ -1,16 +1,13 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    readme.txt                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: teppei <teppei@student.42.fr>              +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/11/09 00:35:41 by teppei            #+#    #+#              #
-#    Updated: 2020/11/10 19:44:36 by teppei           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+# ft_server
 
-reviewの手順
+Dockerfile sets up a web server with Nginx, in only one docker container. The
+container OS must be debian buster.
+
+The server is able to run several services at the same time.  
+The services are a WordPress website, phpMyAdmin and MySQL.  
+
+
+## How to review
 
 1) docker image を作る (-t はイメージの名前を指定するオプション, ./はdockerfileのパス)
 docker image build -t ft_server ./
